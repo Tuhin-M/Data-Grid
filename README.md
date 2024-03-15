@@ -1,6 +1,5 @@
 Interactive Data Grid - JavaScript Front-End Assignment
 This project demonstrates a dynamic and interactive data grid built with JavaScript for displaying and manipulating tabular data.
-
 Features:- 
 Responsive Design: Adapts to different screen sizes.
 Data Display: Displays a dataset with at least 50 rows and 5 columns.
