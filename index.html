@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Grid</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Interactive Data Grid </h1>
+
+    <div class="searchbar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchData()">Search</button>
+    </div>
+
+    <table id="data-grid">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">ID</th>
+                <th onclick="sortTable(1)">Name</th>
+                <th onclick="sortTable(2)">Email</th>
+                <th onclick="sortTable(3)">Age</th>
+                <th onclick="sortTable(4)">Country</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Data will be populated here dynamically -->
+        </tbody>
+    </table>
+
+    <div class="belowBtn">
+        <button style="margin: 2%;" onclick="addRow()">Add Row</button>
+        <button style="margin: 2%;" onclick="exportData('csv')">Export CSV</button>
+        <button style="margin: 2%;" onclick="exportData('json')">Export JSON</button>
+        <input type="file" id="importFile" accept=".csv,.json" onchange="importData(event)">
+    </div>
+
+    <ul class="pagination" id="pagination">Pagination -> </ul>
+
+    <script src="./data_grid.js"></script>
+
+</body>
+
+</html>

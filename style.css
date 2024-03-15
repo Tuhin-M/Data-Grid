@@ -1,0 +1,85 @@
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-bottom: 5vh;
+}
+table {
+  width: 90%;
+  margin-left: 5%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  color: #191515;
+  text-align: left;
+}
+
+th {
+  background-color: #0b0a0ab3;
+  cursor: pointer;
+  resize: horizontal;
+  overflow: auto;
+  border: 1px solid #aaa;
+  padding: 8px;
+  color: #c9e1f2;
+  text-align: left;
+}
+
+th.sorted-asc::after {
+  content: ' ▲';
+}
+
+th.sorted-desc::after {
+  content: ' ▼';
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.editable input {
+  width: 100%;
+}
+
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.belowBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  list-style-type: none;
+  margin-right: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
